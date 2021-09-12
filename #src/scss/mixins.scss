@@ -1,0 +1,12 @@
+//* Миксины
+@mixin flexing($jc: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $jc;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
